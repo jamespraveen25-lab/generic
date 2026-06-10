@@ -21,12 +21,27 @@ namespace generic
 
 
             }
+            internal void display2<j>(j data)
+            {
+                Console.WriteLine("student details is" + data);
+
+
+            }
 
         }
         static void Main(string[] args)
         {
             student james = new student();
             james.display<int,string,string,string,string,int>(25,"james","nawab","amaravathi","vizag",500013);
+            james.display2<int>(123);
+            james.display2<string>("james");
+            james.display2<string>("romanreings");
+
         }
     }
 }
+
+
+
+
+
